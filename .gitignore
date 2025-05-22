@@ -30,3 +30,22 @@
 *.exe
 *.out
 *.app
+
+# Visual Studio
+CMakeSettings.json
+/.vs
+/.vscode
+/.git
+
+/out
+/build
+/x64-Relase
+/x64-Debug
+/dlls
+/Release
+/Debug
+/bin
+/.cmake
+/.codelite
+CMakeLists.txt.user
+/CMakeFiles
