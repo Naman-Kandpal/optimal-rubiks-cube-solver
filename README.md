@@ -79,9 +79,9 @@ Therefore, there are 4!^5 / 12 = 96 * 4!^3 / 2 = 663552 states to store in the d
 
 
 ### System Requirements:
-g++ 13 or above
-SDL2 version 3.1 or above
-CMake
+- g++ 13 or above
+- SDL2 version 3.1 or above
+- CMake
 
 ##### Building on Linux
 1. `sudo apt install cmake libsdl2-dev g++`
