@@ -1,7 +1,8 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
-#include "SDL.h"
+// #include "SDL.h"
+#include "D:\Programming-Tools\msys64\ucrt64\include\SDL2\SDL.h" //change WRT your system
 
 #include "../Cube/cube.h"
 #include "../Util/searchutil.h"
@@ -29,12 +30,20 @@ private:
     void update();
     void render();
 
-    SDL_Window* m_window = nullptr;
-    SDL_Renderer* m_renderer = nullptr;
+    SDL_Window *m_window = nullptr;
+    SDL_Renderer *m_renderer = nullptr;
     bool m_exit = false;
 
     SDL_Color m_colours[6];
-    enum { W, O, G, R, B, Y };
+    enum
+    {
+        W,
+        O,
+        G,
+        R,
+        B,
+        Y
+    };
 
     const uint32_t FPS = 60;
     const uint32_t FRAME_DELAY = 1000 / FPS;
@@ -47,7 +56,7 @@ private:
 
     SDL_Rect m_facelets[48];
     SDL_Rect m_centreFacelets[6];
-    uint8_t  m_faceletsColour[48];
+    uint8_t m_faceletsColour[48];
 
     void scramble(size_t movesAmount);
 

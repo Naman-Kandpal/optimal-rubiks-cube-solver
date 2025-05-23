@@ -84,8 +84,9 @@ Therefore, there are 4!^5 / 12 = 96 * 4!^3 / 2 = 663552 states to store in the d
 - CMake
 
 ##### Building on Linux
-1. `sudo apt install cmake libsdl2-dev g++`
-2.
+
+- 1. `sudo apt install cmake libsdl2-dev g++`
+- 2.
 ```
 mkdir build
 cd build
@@ -94,13 +95,13 @@ make
 ```
 
 ##### Building on Windows
-1. Write the path to your SDL2 folder in CMakeLists.txt
-
-To set the working directory to the root project folder in Visual Studio, change launch.vs.json accordingly:
+- 1 Clone this Repository to your machine.
+- 2. Open CMD in the root folder and do the following:
 ```
-"project": "CMakeLists.txt",
-"projectTarget": "RubiksCubeSolver.exe",
-"name": "RubiksCubeSolver.exe",
-"currentDir": "path\\to\\root"
+mkdir build
+cd build
+cmake .. -G "MinGW Makefiles"
+mingw32-make
+//make sure to include the path to your local SDL2 folder in engine.h file
 ```
 
